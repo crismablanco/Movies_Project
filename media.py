@@ -1,7 +1,10 @@
 import webbrowser
 
 class Movie():
+    """ This is a class to help create differents movies."""
 
+    VALID_RATINGS=["ATP","+13","+18","+21"]
+    
     def __init__(self, movie_title, movie_storyline, movie_image, movie_trailer):
         self.title = movie_title
         self.storyline = movie_storyline

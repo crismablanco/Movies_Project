@@ -34,3 +34,6 @@ jw = media.Movie("Jurasik World",
 
 movies = [dreams, avatar, toy_story, matrix, libertad, jw]
 fresh_tomatoe.open_movies_page(movies)
+
+#print(media.Movie.__name__)
+#print(media.Movie.__module__)
