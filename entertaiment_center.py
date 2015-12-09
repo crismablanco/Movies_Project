@@ -1,38 +1,73 @@
 import fresh_tomatoe
 import media
 
-toy_story = media.Movie("Toy Story",
-                        "The story of a boy and his toys",
-                        "http://www.gstatic.com/tv/thumb/movieposters/17420/p17420_p_v7_ab.jpg",
-                        "https://www.youtube.com/watch?v=KYz2wyBy3kc")
+schindler = media.Movie("Schindler's List",
+                        "In Poland during World War II, Oskar Schindler gradually becomes concerned"
+                        "for his Jewish workforce after witnessing their persecution by the Nazis.",
+                        "http://img.csfd.cz/files/images/user/profile/158/883/158883687_7e48f8.jpg",
+                        "https://www.youtube.com/watch?v=dwfIf1WMhgc",
+                        "8.9",
+                        "Steven Spielberg",
+                        "Liam Neeson, Ralph Fiennes, Ben Kingsley",
+                        "USA",
+                        "1993")
 
-avatar = media.Movie("Avatar",
-                     "",
-                     "http://img.csfd.cz/files/images/user/profile/159/129/159129345_9e5fe4.jpg",
-                     "https://www.youtube.com/watch?v=5PSNL1qE6VY")
+intouchables = media.Movie("Intouchables",
+                           "After he becomes a quadriplegic from a paragliding accident, an aristocrat"
+                           " hires a young man from the projects to be his caregiver.",
+                           "http://fo4mw16y1z42edr6j2m4n6vt.wpengine.netdna-cdn.com/wp-content/uploads/Intouchables-poster.jpg",
+                           "https://www.youtube.com/watch?v=R8wUIez--WE",
+                           "8.6",
+                           "Olivier Nakache, Eric Toledano",
+                           "Francois Cluzet, Omar Sy, Anne Le Ny",
+                           "France",
+                           "2011")
 
 dreams = media.Movie("What dreams may come",
-                     "Chris Neilson dies to find himself in a heaven more amazing than he could have ever dreamed of. There is one thing missing: his wife. After he dies, his wife, Annie killed herself and went to hell. Chris decides to risk eternity in hades for the small chance that he will be able to bring her back to heaven",
+                     "After dying in a car crash a man searches the afterlife for his wife.",
                      "https://upload.wikimedia.org/wikipedia/en/9/91/Whatdreamsposter.jpeg",
-                     "https://www.youtube.com/watch?v=JqKfW4jTn54")
+                     "https://www.youtube.com/watch?v=JqKfW4jTn54",
+                     "7",
+                     "Vincent Ward",
+                     "Robin Williams, Cuba Gooding Jr., Annabella Sciorra",
+                     "USA - New Zealand",
+                     "1998")
 
 matrix = media.Movie("Matrix",
-                     "The Matrix es una película de ciencia ficción escrita y dirigida por Lana y Andy Wachowski y protagonizada por Keanu Reeves, Laurence Fishburne, Carrie-Anne Moss y Hugo Weaving.",
+                     "A computer hacker learns from mysterious rebels about the true nature of his "
+                     "reality and his role in the war against its controllers.",
                      "http://t0.gstatic.com/images?q=tbn:ANd9GcQq3pIz-aKgkmYX1dJ-EL-AlHSPcOO7wdqRIJ5gJy9qNinXpmle",
-                     "https://www.youtube.com/watch?v=m8e-FF8MsqU")
+                     "https://www.youtube.com/watch?v=m8e-FF8MsqU",
+                     "8.7",
+                     "Wachowski Brothers",
+                     " Keanu Reeves, Laurence Fishburne, Carrie-Anne Moss",
+                     "USA",
+                     "1999")
 
-libertad = media.Movie("Sueños de libertad",
-                     "The Shawshank Redemption es una película estadounidense del año 1994, escrita y dirigida por Frank Darabont y protagonizada por Tim Robbins y Morgan Freeman",
-                     "http://frasesdelapelicula.com/wp-content/uploads/2010/10/Sueno-de-fuga.jpg",
-                     "https://www.youtube.com/watch?v=raRbQkJ2pD4")
+freedom = media.Movie("The Shawshank Redemption",
+                       "Two imprisoned men bond over a number of years, finding solace and eventual"
+                       " redemption through acts of common decency.",
+                       "http://frasesdelapelicula.com/wp-content/uploads/2010/10/Sueno-de-fuga.jpg",
+                       "https://www.youtube.com/watch?v=raRbQkJ2pD4",
+                       "9.3",
+                       "Frank Darabont",
+                       "Tim Robbins, Morgan Freeman, Bob Gunton",
+                       "USA",
+                       "1994")
 
-jw = media.Movie("Jurasik World",
-                     "La película, cuarta parte de la franquicia de Parque Jurásico iniciada en 1993, está producida por Steven Spielberg, Frank Marshall y Patrick Crowley.",
-                     "https://merlinsmusings.files.wordpress.com/2015/06/jurassicworldtrex.jpg",
-                     "https://www.youtube.com/watch?v=RFinNxS5KN4")
+lion = media.Movie("The Lion King",
+                   "Lion cub and future king Simba searches for his identity. His eagerness to "
+                   "please others and penchant for testing his boundaries sometimes gets him into trouble.",
+                   "http://ecx.images-amazon.com/images/I/51M7QPXDNPL.jpg",
+                   "https://www.youtube.com/watch?v=4sj1MT05lAA",
+                   "8.5",
+                   "Roger Allers, Rob Minkoff",
+                   "Matthew Broderick, Jeremy Irons, James Earl Jones",
+                   "USA",
+                   "1994")
 
 
-movies = [dreams, avatar, toy_story, matrix, libertad, jw]
+movies = [dreams, schindler, intouchables, matrix, freedom, lion]
 fresh_tomatoe.open_movies_page(movies)
 
 #print(media.Movie.__name__)

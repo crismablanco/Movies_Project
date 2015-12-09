@@ -1,15 +1,41 @@
 import webbrowser
 
 class Movie():
-    """ This is a class to help create differents movies."""
+    """ This is a class that represent movies with their:
+            - title
+            - storyline
+            - image poster
+            - trailer
+            - rating
+            - director
+            - stars
+            - country
+            - year
 
-    VALID_RATINGS=["ATP","+13","+18","+21"]
-    
-    def __init__(self, movie_title, movie_storyline, movie_image, movie_trailer):
-        self.title = movie_title
-        self.storyline = movie_storyline
-        self.poster_image_url = movie_image
-        self.trailer_youtube_url = movie_trailer
+            **** made by crismablanco@gmail.com to Udacity Nanodegree Program
+
+    """
+
+    def __init__(self,
+                 movie_title,
+                 movie_storyline,
+                 movie_image,
+                 movie_trailer,
+                 movie_rating,
+                 movie_director,
+                 movie_stars,
+                 movie_country,
+                 movie_year):
+        
+        self.title                  = movie_title
+        self.storyline              = movie_storyline
+        self.poster_image_url       = movie_image
+        self.trailer_youtube_url    = movie_trailer
+        self.rating                 = movie_rating
+        self.director               = movie_director
+        self.stars                  = movie_stars
+        self.country                = movie_country
+        self.year                   = movie_year
 
     def show_trailer(self):
         webbrowser.open(self.trailer)
