@@ -15,7 +15,7 @@ class Movie():
             **** made by crismablanco@gmail.com to Udacity Nanodegree Program
 
     """
-
+    #constructor definition
     def __init__(self,
                  movie_title,
                  movie_storyline,
@@ -37,6 +37,8 @@ class Movie():
         self.country                = movie_country
         self.year                   = movie_year
 
+    # Function show_trailer that open a browser with the youtube URL.
+    # This is just for testing purpose
     def show_trailer(self):
         webbrowser.open(self.trailer)
         

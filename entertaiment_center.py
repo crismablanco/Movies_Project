@@ -1,6 +1,8 @@
-import fresh_tomatoe
-import media
+import fresh_tomatoe #import the fresh_tomatoe that generates an HTML file with the movies
+import media #import the media file with the movie class definition
 
+
+# now the list of objects (each object is a movie with the corresponding characteristics)
 schindler = media.Movie("Schindler's List",
                         "In Poland during World War II, Oskar Schindler gradually becomes concerned"
                         "for his Jewish workforce after witnessing their persecution by the Nazis.",
@@ -65,10 +67,10 @@ lion = media.Movie("The Lion King",
                    "Matthew Broderick, Jeremy Irons, James Earl Jones",
                    "USA",
                    "1994")
+# end of the list of movies
 
 
+# the movie array will be the parameter that will send to the
+# open_movies_page function on fresh_tomatoe
 movies = [dreams, schindler, intouchables, matrix, freedom, lion]
 fresh_tomatoe.open_movies_page(movies)
-
-#print(media.Movie.__name__)
-#print(media.Movie.__module__)
